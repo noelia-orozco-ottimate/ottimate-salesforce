@@ -1,0 +1,318 @@
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ottimate Case Creation Form</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet" />
+    <style>
+      body {
+        font-family: 'Roboto', sans-serif;
+        background-color: #f4f6f9;
+        margin: 0;
+        padding: 0;
+      }
+
+      .container {
+        max-width: 700px;
+        background-color: #ffffff;
+        margin: 50px auto;
+        padding: 30px;
+        border-radius: 10px;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+        border-top: 5px solid #00a1e0;
+      }
+
+      .ottimate-logo {
+        display: block;
+        margin: 0 auto 20px auto;
+        max-width: 150px;
+      }
+
+      h2 {
+        text-align: center;
+        margin-bottom: 25px;
+        color: #032d60;
+      }
+
+      label {
+        display: block;
+        margin-bottom: 6px;
+        font-weight: 500;
+        color: #032d60;
+      }
+
+      label.required::after {
+        content: " *";
+        color: #d72c0d;
+      }
+
+      input[type="text"],
+      input[type="email"],
+      select,
+      textarea {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 20px;
+        border: 1px solid #d8dde6;
+        border-radius: 4px;
+        box-sizing: border-box;
+        font-size: 14px;
+      }
+
+      textarea {
+        resize: vertical;
+        height: 120px;
+      }
+
+      input[type="submit"] {
+        background-color: #00a1e0;
+        color: white;
+        padding: 12px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        width: 100%;
+        font-size: 16px;
+        font-weight: 500;
+      }
+
+      input[type="submit"]:hover {
+        background-color: #0070d2;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <img src="https://d41000002ipieeay--c.vf.force.com/resource/1712384301000/Ottimate_Logo_Otti?" alt="Ottimate Logo" class="ottimate-logo" />
+      <h2>Case Creation Form</h2>
+      <form id="caseForm" action="https://d41000002ipieeay--dev2.sandbox.my.salesforce.com/servlet/servlet.WebToCase?encoding=UTF-8&orgId=00DVG000004xqeb" method="POST" onsubmit="return appendOtherPlatformToDescription()">
+        <input type="hidden" name="orgid" value="00DVG000004xqeb" />
+        <input type="hidden" name="retURL" value="https://www.google.com/" />
+        <input type="hidden" name="recordType" value="012VG000001i4vN" />
+
+        <label for="00NVG000002WfA9" class="required">Requester</label>
+        <select id="00NVG000002WfA9" name="00NVG000002WfA9" required>
+          <option value="">--None--</option>
+          <option value="Adrian Sanhueza">Adrian Sanhueza</option>
+          <option value="Akshay Makan">Akshay Makan</option>
+          <option value="Akshay VV">Akshay VV</option>
+          <option value="Alan Campos">Alan Campos</option>
+          <option value="Allison Neely">Allison Neely</option>
+          <option value="Alyana Ladha">Alyana Ladha</option>
+          <option value="Amanda Gojanovich">Amanda Gojanovich</option>
+          <option value="Amir Sanchez">Amir Sanchez</option>
+          <option value="Anahi Frescas">Anahi Frescas</option>
+          <option value="Andrea Canudas">Andrea Canudas</option>
+          <option value="Andrea Moreno">Andrea Moreno</option>
+          <option value="Andrea Weinfurt">Andrea Weinfurt</option>
+          <option value="Andrew Sureshkumar">Andrew Sureshkumar</option>
+          <option value="Arturo Inzunza">Arturo Inzunza</option>
+          <option value="Barrett Boston">Barrett Boston</option>
+          <option value="Ben Spiegel">Ben Spiegel</option>
+          <option value="Bill Brady">Bill Brady</option>
+          <option value="Blake Batista">Blake Batista</option>
+          <option value="Blake Donley">Blake Donley</option>
+          <option value="Brandi Bennett">Brandi Bennett</option>
+          <option value="Brandon Nembhard">Brandon Nembhard</option>
+          <option value="Brenda Perales">Brenda Perales</option>
+          <option value="Brittany LeClerc">Brittany LeClerc</option>
+          <option value="Brooke McCarroll">Brooke McCarroll</option>
+          <option value="Bryan Parra">Bryan Parra</option>
+          <option value="Caitlin Deja">Caitlin Deja</option>
+          <option value="Cameron Taddonio">Cameron Taddonio</option>
+          <option value="Carter McLoughlin">Carter McLoughlin</option>
+          <option value="Cayman Ogden">Cayman Ogden</option>
+          <option value="Chad Gaudino">Chad Gaudino</option>
+          <option value="Chelsea Figurski">Chelsea Figurski</option>
+          <option value="Cheryl Ciccarello-Furgison">Cheryl Ciccarello-Furgison</option>
+          <option value="Chris Mares">Chris Mares</option>
+          <option value="Christian Mora">Christian Mora</option>
+          <option value="Christine Radka">Christine Radka</option>
+          <option value="Claudia Aguirre">Claudia Aguirre</option>
+          <option value="Collette Wojdylo">Collette Wojdylo</option>
+          <option value="Collin Dennis">Collin Dennis</option>
+          <option value="Conner Moran">Conner Moran</option>
+          <option value="Connor Hicks">Connor Hicks</option>
+          <option value="Dakota Ray">Dakota Ray</option>
+          <option value="Daniela Tovar">Daniela Tovar</option>
+          <option value="Daniel Chacon">Daniel Chacon</option>
+          <option value="Daniel Corn">Daniel Corn</option>
+          <option value="Daniel Giaconi">Daniel Giaconi</option>
+          <option value="Danielle Simer">Danielle Simer</option>
+          <option value="Dan Kim">Dan Kim</option>
+          <option value="Dereck Rodriguez">Dereck Rodriguez</option>
+          <option value="Diego Gonzalez">Diego Gonzalez</option>
+          <option value="Diego Pagan">Diego Pagan</option>
+          <option value="Dijon Olave">Dijon Olave</option>
+          <option value="Don Dittmar">Don Dittmar</option>
+          <option value="Edgar Reyes">Edgar Reyes</option>
+          <option value="Eileen Iglesias">Eileen Iglesias</option>
+          <option value="Elias Medrano">Elias Medrano</option>
+          <option value="Elyse Williams">Elyse Williams</option>
+          <option value="Emily Sansom">Emily Sansom</option>
+          <option value="Erica Yonkman">Erica Yonkman</option>
+          <option value="Erick Zepeda">Erick Zepeda</option>
+          <option value="Eric Liddy">Eric Liddy</option>
+          <option value="Eric Poss">Eric Poss</option>
+          <option value="Felicia Rella">Felicia Rella</option>
+          <option value="Felipe Duran">Felipe Duran</option>
+          <option value="Gabe Germino">Gabe Germino</option>
+          <option value="Gerardo Cedano">Gerardo Cedano</option>
+          <option value="Grant Renner">Grant Renner</option>
+          <option value="Hannah Khouri">Hannah Khouri</option>
+          <option value="Hannia Mojica">Hannia Mojica</option>
+          <option value="Harley Hudson">Harley Hudson</option>
+          <option value="Heather Wright">Heather Wright</option>
+          <option value="Hugo Chavez Barroso">Hugo Chavez Barroso</option>
+          <option value="Humberto Mares">Humberto Mares</option>
+          <option value="Ienura Whitener">Ienura Whitener</option>
+          <option value="Insights Integration">Insights Integration</option>
+          <option value="Jake Hirsch">Jake Hirsch</option>
+          <option value="James Ludwig">James Ludwig</option>
+          <option value="Jennifer Coppernoll">Jennifer Coppernoll</option>
+          <option value="Jenny Burns">Jenny Burns</option>
+          <option value="Jeremy Torres">Jeremy Torres</option>
+          <option value="Jessica Davis">Jessica Davis</option>
+          <option value="Jessie Law">Jessie Law</option>
+          <option value="Jesus Oropeza">Jesus Oropeza</option>
+          <option value="Jett Klintworth">Jett Klintworth</option>
+          <option value="Joe Giarmo">Joe Giarmo</option>
+          <option value="John Was">John Was</option>
+          <option value="Jono Bowles">Jono Bowles</option>
+          <option value="Joseph Lombardi">Joseph Lombardi</option>
+          <option value="Josh Pearson">Josh Pearson</option>
+          <option value="Joshua Kyle">Joshua Kyle</option>
+          <option value="Josue Medrano">Josue Medrano</option>
+          <option value="Kaitlin Gallivan">Kaitlin Gallivan</option>
+          <option value="Kane Garcia">Kane Garcia</option>
+          <option value="Kara Dion">Kara Dion</option>
+          <option value="Katie Snowberger">Katie Snowberger</option>
+          <option value="Kit Zorsch">Kit Zorsch</option>
+          <option value="Kori Bowling">Kori Bowling</option>
+          <option value="Krishna Janakiraman">Krishna Janakiraman</option>
+          <option value="Kristopher Tapper">Kristopher Tapper</option>
+          <option value="Kylie Baucom">Kylie Baucom</option>
+          <option value="Lara Moulton">Lara Moulton</option>
+          <option value="Lauren Dessi">Lauren Dessi</option>
+          <option value="Lenny Gumm">Lenny Gumm</option>
+          <option value="Leo Granillo">Leo Granillo</option>
+          <option value="Luis Gardea">Luis Gardea</option>
+          <option value="Luke Detering">Luke Detering</option>
+          <option value="Luke Guthrie">Luke Guthrie</option>
+          <option value="Manuel Vargas">Manuel Vargas</option>
+          <option value="Maria Diaz">Maria Diaz</option>
+          <option value="Mark Pierce">Mark Pierce</option>
+          <option value="Matt Berney">Matt Berney</option>
+          <option value="Matthew Wallach">Matthew Wallach</option>
+          <option value="Matt Kelso">Matt Kelso</option>
+          <option value="Melissa Johnson">Melissa Johnson</option>
+          <option value="Melissa Joukema">Melissa Joukema</option>
+          <option value="Mike Waldron">Mike Waldron</option>
+          <option value="Mohammed Raeef">Mohammed Raeef</option>
+          <option value="Morgan Macko">Morgan Macko</option>
+          <option value="Nick Snyder">Nick Snyder</option>
+          <option value="Nick Sterner">Nick Sterner</option>
+          <option value="Nithish Deepankar">Nithish Deepankar</option>
+          <option value="Noelia Orozco">Noelia Orozco</option>
+          <option value="Nolan Washatka">Nolan Washatka</option>
+          <option value="Olivia Ivory">Olivia Ivory</option>
+          <option value="Olivia Johnson">Olivia Johnson</option>
+          <option value="Paige Basore">Paige Basore</option>
+          <option value="Pat Burkley">Pat Burkley</option>
+          <option value="Patricia Calalang">Patricia Calalang</option>
+          <option value="Patrick Wachter">Patrick Wachter</option>
+          <option value="Paul Criscione">Paul Criscione</option>
+          <option value="Paul Hunt">Paul Hunt</option>
+          <option value="Ramakrishnan Balaji">Ramakrishnan Balaji</option>
+          <option value="Ryan Stegmuller">Ryan Stegmuller</option>
+          <option value="Ryan Sutherlin">Ryan Sutherlin</option>
+          <option value="Sade&#39; Santana">Sade&#39; Santana</option>
+          <option value="Samantha Rodriguez">Samantha Rodriguez</option>
+          <option value="Samir Regragui">Samir Regragui</option>
+          <option value="Samuel Suppipat">Samuel Suppipat</option>
+          <option value="Sarang Np">Sarang Np</option>
+          <option value="Sathya Viswanathan">Sathya Viswanathan</option>
+          <option value="Sembiyan Anbarasu">Sembiyan Anbarasu</option>
+          <option value="Sergio Rubio">Sergio Rubio</option>
+          <option value="Shail Sharma">Shail Sharma</option>
+          <option value="Spencer Epps">Spencer Epps</option>
+          <option value="Stephanie Strange">Stephanie Strange</option>
+          <option value="Suma Kalipatnapu">Suma Kalipatnapu</option>
+          <option value="Tatianna Fairley">Tatianna Fairley</option>
+          <option value="Taylor Brammer">Taylor Brammer</option>
+          <option value="Tyler Slaughenhaupt">Tyler Slaughenhaupt</option>
+          <option value="Ulukan Ulutas">Ulukan Ulutas</option>
+          <option value="Vincent DeMarinis">Vincent DeMarinis</option>
+          <option value="Wesley Goldstein">Wesley Goldstein</option>
+          <option value="Will Thompson">Will Thompson</option>
+          <option value="Zach Lesher">Zach Lesher</option>
+        </select>
+
+        <label for="type">Type</label>
+        <select id="type" name="type">
+          <option value="">--None--</option>
+          <option value="Problem">Problem</option>
+          <option value="Feature Request">Feature Request</option>
+          <option value="Question">Question</option>
+          <option value="Bug">Bug</option>
+          <option value="Error">Error</option>
+        </select>
+
+        <label for="subject" class="required">Subject</label>
+        <input id="subject" name="subject" maxlength="80" type="text" required />
+
+        <label for="00NVG000002WfV7">URL</label>
+        <input id="00NVG000002WfV7" name="00NVG000002WfV7" maxlength="255" type="text" />
+
+        <label for="00NVG000002WfJp" class="required">Platform</label>
+        <select id="00NVG000002WfJp" name="00NVG000002WfJp" required onchange="toggleOtherPlatform(this)">
+          <option value="">--None--</option>
+          <option value="Salesforce">Salesforce</option>
+          <option value="NUE">NUE</option>
+          <option value="Marketo">Marketo</option>
+          <option value="Outreach">Outreach</option>
+          <option value="Other">Other</option>
+        </select>
+
+        <div id="otherPlatformWrapper" style="display: none;">
+          <label for="otherPlatform" class="required">Please specify other platform</label>
+          <input type="text" id="otherPlatform" name="otherPlatform" />
+        </div>
+
+        <label for="description" class="required">Description</label>
+        <textarea id="description" name="description" required></textarea>
+
+        <input type="submit" name="submit" value="Submit Case" />
+      </form>
+    </div>
+    <script>
+      function toggleOtherPlatform(selectElement) {
+        const wrapper = document.getElementById('otherPlatformWrapper');
+        const otherInput = document.getElementById('otherPlatform');
+        if (selectElement.value === 'Other') {
+          wrapper.style.display = 'block';
+          otherInput.setAttribute('required', 'required');
+        } else {
+          wrapper.style.display = 'none';
+          otherInput.removeAttribute('required');
+          otherInput.value = '';
+        }
+      }
+
+      function appendOtherPlatformToDescription() {
+        const platformSelect = document.getElementById('00NVG000002WfJp');
+        const otherInput = document.getElementById('otherPlatform');
+        const description = document.getElementById('description');
+        if (platformSelect.value === 'Other' && otherInput.value.trim() !== '') {
+          description.value += `\n(Other platform: ${otherInput.value.trim()})`;
+        }
+        return true;
+      }
+
+      document.getElementById('00NVG000002WfA9').addEventListener('change', function () {
+        toggleOtherPlatform(this);
+      });
+    </script>
+  </body>
+  </html>
