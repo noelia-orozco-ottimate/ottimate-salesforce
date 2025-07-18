@@ -86,13 +86,14 @@
     <div class="container">
       <img src="https://noelia-orozco-ottimate.github.io/ottimate-salesforce/Ottimate_logo.png" alt="Ottimate Logo" class="ottimate-logo" />
       <h2>Case Creation Form</h2>
-      <form id="caseForm" action="https://d41000002ipieeay--dev2.sandbox.my.salesforce.com/servlet/servlet.WebToCase?encoding=UTF-8&orgId=00DVG000004xqeb" method="POST" onsubmit="return appendOtherPlatformToDescription()">
+      <form id="caseForm" action="https://webto.salesforce.com/servlet/servlet.WebToCase?encoding=UTF-8&orgId=00D41000002ipIE" method="POST" onsubmit="return appendOtherPlatformToDescription()">
         <input type="hidden" name="orgid" value="00DVG000004xqeb" />
-        <input type="hidden" name="retURL" value="https://www.google.com/" />
-        <input type="hidden" name="recordType" value="012VG000001i4vN" />
+        <input type="hidden" name="retURL" value="https://noelia-orozco-ottimate.github.io/ottimate-salesforce/submission_completed.html" />
 
-        <label for="00NVG000002WfA9" class="required">Requester</label>
-        <select id="00NVG000002WfA9" name="00NVG000002WfA9" required>
+        <input type="hidden" name="recordType" value="012VN000000y3sf" />
+
+        <label for="00NVN000003QjZG" class="required">Requester</label>
+        <select id="00NVN000003QjZG" name="00NVN000003QjZG" required>
           <option value="">--None--</option>
           <option value="Adrian Sanhueza">Adrian Sanhueza</option>
           <option value="Akshay Makan">Akshay Makan</option>
@@ -249,8 +250,8 @@
           <option value="Zach Lesher">Zach Lesher</option>
         </select>
 
-        <label for="type">Type</label>
-        <select id="type" name="type">
+        <label for="type" class="required">Type</label>
+        <select id="type" name="type" required>
           <option value="">--None--</option>
           <option value="Problem">Problem</option>
           <option value="Feature Request">Feature Request</option>
@@ -258,14 +259,23 @@
           <option value="Error">Error</option>
         </select>
 
+        <label for="priority">Priority</label>
+        <select  id="priority" name="priority">
+          <option value="">--None--</option>
+          <option value="High">High</option>
+          <option value="Medium">Medium</option>
+          <option value="Low">Low</option>
+          <option value="Blocking Issue">Blocking Issue</option>
+        </select><br>
+
         <label for="subject" class="required">Subject</label>
         <input id="subject" name="subject" maxlength="80" type="text" required />
 
-        <label for="00NVG000002WfV7">URL</label>
-        <input id="00NVG000002WfV7" name="00NVG000002WfV7" maxlength="255" type="text" />
+        <label for="00NVN000003QjZH">URL</label>
+        <input id="00NVN000003QjZH" name="00NVN000003QjZH" maxlength="255" type="text" />
 
-        <label for="00NVG000002WfJp" class="required">Platform</label>
-        <select id="00NVG000002WfJp" name="00NVG000002WfJp" required onchange="toggleOtherPlatform(this)">
+        <label for="00NVN000003QjZF" class="required">Platform</label>
+        <select id="00NVN000003QjZF" name="00NVN000003QjZF" required onchange="toggleOtherPlatform(this)">
           <option value="">--None--</option>
           <option value="Salesforce">Salesforce</option>
           <option value="NUE">NUE</option>
